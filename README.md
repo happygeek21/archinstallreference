@@ -1,5 +1,10 @@
 # My Personal Arch Install Commands
 
+## Disclaimer
+This guide is tailored to my personal Arch Linux installation process. Use it at your own risk. Always ensure that you have a backup of your data and verify commands as they may vary depending on your system's hardware and configuration.
+
+---
+
 ## 1. Setting Up Disk and Partitions
 - `lsblk`
 - `cfdisk /dev/<diskname>`
@@ -64,3 +69,11 @@ reboot
 ```bash
 sudo pacman -S plasma sddm firefox kate konsole
 sudo systemctl enable --now sddm
+```
+
+---
+
+## License
+This guide is licensed under the GNU General Public License v3.0. You are free to use, modify, and distribute it under the terms of this license.
+
+For more details, see the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
