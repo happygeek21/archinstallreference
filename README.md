@@ -53,7 +53,7 @@ EDITOR=nano visudo
 
 ## 7. Installing the GRUB Bootloader
 ```bash
-grub-install /dev/<disk name>
+grub-install --target=x86_64-efi --efi-directory=/mnt/boot/efi --bootloader-id=GRUB --modules="tpm" --disable-shim-lock
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable networkmanager
 ```
